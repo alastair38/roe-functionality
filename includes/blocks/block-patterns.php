@@ -301,6 +301,51 @@ function blockhaus_register_patterns() {
     );
 
     register_block_pattern(
+      'blockhaus/blockhaus-publication-details',
+      array(
+        'title'   => __('Publication Details', 'blockhaus'),
+        'categories'    => [
+          'callouts-and-quotes',
+        ],
+        'content' => '
+        <!-- wp:group {"className":"blockhaus-publication-details"} -->
+        <div class="wp-block-group blockhaus-publication-details">
+        
+        <!-- wp:paragraph -->
+        <p>Authors.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><em>Journal/Publisher</em>.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Date.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Volume.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>pp:</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>Reference</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:buttons -->
+        <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-button-rounded"} -->
+        <div class="wp-block-button is-style-button-rounded"><a class="wp-block-button__link" href="https://www.taylorfrancis.com/books/e/9780203731932">View Publication</a></div>
+        <!-- /wp:button --></div>
+        <!-- /wp:buttons --></div>
+        <!-- /wp:group -->
+        ',
+      )
+      );
+
+    register_block_pattern(
       'blockhaus/blockhaus-quote',
       array(
         'title'   => __('Blockhaus Quote', 'blockhaus'),
@@ -308,8 +353,8 @@ function blockhaus_register_patterns() {
           'callouts-and-quotes',
         ],
         'content' => '
-        <!-- wp:quote {"className":"blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 px-20 py-16 rounded-md border-l-0 outline-4 outline-double outline-accent outline-offset-4 is-style-default","fontSize":"large"} -->
-        <blockquote class="wp-block-quote blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 px-20 py-16 rounded-md border-l-0 outline-4 outline-double outline-accent outline-offset-4 is-style-default has-large-font-size"><p>The cure for boredom is curiosity. There is no cure for curiosity.</p><cite>Dorothy Parker</cite></blockquote>
+        <!-- wp:quote {"className":"blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 rounded-md border-l-0 is-style-default","fontSize":"large"} -->
+        <blockquote class="wp-block-quote blockhaus-quote relative bg-neutral-light-100 flex flex-col items-center text-center gap-2 rounded-md border-l-0 is-style-default has-large-font-size"><p>The cure for boredom is curiosity. There is no cure for curiosity.</p><cite>Dorothy Parker</cite></blockquote>
         <!-- /wp:quote -->
         ',
       )

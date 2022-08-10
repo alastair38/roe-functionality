@@ -62,9 +62,9 @@ if( have_rows('external_links') ):
       <?php if($img) {
         echo wp_get_attachment_image( $img, $img_size, "", array( 'class' => 'w-full object-cover aspect-video md:aspect-auto md:w-auto bg-accent' ));
       } ?>
-      <div class="flex flex-col gap-2 p-6">
+      <div class="flex flex-col gap-4 p-6">
         <span class="font-bold"><?php echo $title;?></span>
-        <span class="bg-yellow-300 group-focus:bg-white group-hover:bg-white transition-all duration-200 group-focus:-rotate-2 group-hover:-rotate-2 border border-current w-fit px-2 shadow-retro inline-flex -rotate-1">Read More</span>
+        <span class="group-focus:bg-white group-hover:ring-accent-tertiary transition-all duration-200 ring-2 ring-current w-fit px-2 rounded-full inline-flex ">Read More</span>
       </div>
     </a>
      
