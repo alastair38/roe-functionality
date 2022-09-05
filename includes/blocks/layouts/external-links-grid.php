@@ -64,7 +64,7 @@ if( have_rows('external_links') ):
       } ?>
       <div class="flex flex-col gap-4 p-6">
         <span class="font-bold"><?php echo $title;?></span>
-        <span class="group-focus:bg-white group-hover:ring-offset transition-all duration-200 ring-4 ring-current w-fit px-2 rounded-full inline-flex ">Read More</span>
+        <span class="group-focus:bg-white group-focus:ring-4 group-hover:ring-4 transition-all duration-200 ring-offset border border-current w-fit px-2 rounded-full inline-flex ">Read More</span>
       </div>
     </a>
      
