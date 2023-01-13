@@ -48,7 +48,7 @@ if( have_rows('quotes') ):
          echo '<p class="text-lg">' . $text . '</p>';
 
         if($author):
-         echo '<cite>' . $author . '</cite>';
+         echo '<span class="cite">' . $author . '</span>';
         endif;
     
       echo '</blockquote>';
