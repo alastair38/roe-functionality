@@ -80,10 +80,10 @@ function blockhaus_acf_add_socialmedia_field_groups() {
         ),
         array(
           'key' => 'field_6299da6506b47',
-          'label' => 'Twitter Profile',
-          'name' => 'twitter_url',
+          'label' => 'BlueSky Profile',
+          'name' => 'bluesky_url',
           'type' => 'url',
-          'instructions' => '<p>Enter the full URL / web address of your Twitter profile. To use this in a theme template, use the following code:</p><code>$twitter_url = get_field("twitter_url", "options");</code>',
+          'instructions' => '<p>Enter the full URL / web address of your BlueSky profile. To use this in a theme template, use the following code:</p><code>$bluesky_url = get_field("bluesky_url", "options");</code>',
           'required' => 0,
           'conditional_logic' => 0,
           'wrapper' => array(
